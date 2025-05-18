@@ -7,6 +7,7 @@ import Auftraege from '../components/Auftraege.vue';
 import Neu from '../components/Neu.vue';
 import Reports from '../components/Reports.vue';
 import Einstellungen from '../components/Einstellungen.vue';
+import BaustelleDetail from '../components/BaustelleDetail.vue';
 
 const routes = [
   {
@@ -23,6 +24,12 @@ const routes = [
     path: '/baustellen',
     name: 'Baustellen',
     component: Baustellen,
+  },
+  {
+    path: '/baustellen/:id',
+    name: 'BaustelleDetail',
+    component: BaustelleDetail,
+    props: true,
   },
   {
     path: '/auftraege',

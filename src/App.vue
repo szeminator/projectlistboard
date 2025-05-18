@@ -5,7 +5,7 @@ import Header from './components/Header.vue'
 
 <template>
   <Header />
-  <main class="container mx-auto py-8">
+  <main class="min-h-screen bg-picton-50 py-8">
     <!-- Project list will go here -->
     <router-view />
   </main>
