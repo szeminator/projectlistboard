@@ -1,6 +1,4 @@
 export default {
-  purge: [],
-  darkMode: false, // or 'media' or 'class'
   content: [
     './index.html',
     './src/**/*.{vue,js,ts,jsx,tsx}',
@@ -12,9 +10,6 @@ export default {
         secondary: '#f59e42', // Placeholder company secondary color
       },
     },
-  },
-  variants: {
-    extend: {},
   },
   plugins: [],
 }
