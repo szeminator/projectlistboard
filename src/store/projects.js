@@ -13,7 +13,7 @@ export const useProjectsStore = defineStore('projects', {
       this.error = null;
       try {
         const response = await axios.get('https://middleware.blitzschutz-reichenhauser.com/api/v1/projects');
-        this.projects = response.data;
+        this.projects = response.data.data;
       } catch (err) {
         this.error = err;
       } finally {
